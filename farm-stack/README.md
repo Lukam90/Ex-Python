@@ -17,3 +17,9 @@ python3 -m pipenv run
 **Start**
 
 python3 -m uvicorn main:app --reload
+
+### Frontend
+
+**Create**
+
+npx create-react-app frontend
