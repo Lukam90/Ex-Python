@@ -23,3 +23,7 @@ python3 -m uvicorn main:app --reload
 **Create**
 
 npx create-react-app frontend
+
+**Packages**
+
+npm install axios bootstrap
