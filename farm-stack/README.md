@@ -1,0 +1,19 @@
+# farm-stack
+
+[FARM Stack Course - FastAPI, React, MongoDB](https://www.youtube.com/watch?v=OzUzrs8uJl8) de *Bek Brace (freeCodeCamp)*
+
+## Commands
+
+### Backend
+
+**Packages**
+
+python3 -m pipenv shell
+
+python3 -m pipenv install -r requirements.txt
+
+python3 -m pipenv run
+
+**Start**
+
+python3 -m uvicorn main:app --reload
