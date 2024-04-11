@@ -1,11 +1,3 @@
-# farm-stack
-
-[FARM Stack Course - FastAPI, React, MongoDB](https://www.youtube.com/watch?v=OzUzrs8uJl8) de *Bek Brace (freeCodeCamp)*
-
-## Commands
-
-### Backend
-
 **Packages**
 
 python3 -m pipenv shell
