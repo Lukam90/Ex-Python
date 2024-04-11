@@ -1,5 +1,5 @@
 date=`date +"%H.%M"`
-name="Kivy"
+name="Python"
 
 target="$HOME/Téléchargements/Copies/CP-$name-$date"
 
