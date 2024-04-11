@@ -7,6 +7,10 @@ from kivymd.uix.selectioncontrol import MDCheckbox
 
 from datetime import datetime
 
+from database import Database
+
+db = Database()
+
 class DialogContent(MDBoxLayout):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -33,8 +37,14 @@ class ListItemWithCheckbox(TwoLineAvatarIconListItem):
         if check.active:
             the_list_item.text = "[s]" + the_list_item.text + "[/s]"
 
+            db.mark_task_as_completed(the_list_item.pk)
+        else:
+            the_list_item.text = str(db.mark_task_as_incompleted(the_list_item.pk))
+
     def delete_item(self, the_list_item):
         self.parent.remove_widget(the_list_item)
+
+        db.delete_task(the_list_item.pk)
 
 class LeftCheckbox(ILeftBody, MDCheckbox):
     pass
@@ -68,102 +78,3 @@ class MainApp(MDApp):
 if __name__ == "__main__":
     app = MainApp()
     app.run()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
