@@ -1,3 +1,1 @@
-cd kivy-tasks-app
-
-python3 main.py
+python3 web-scraping/scraping.py
